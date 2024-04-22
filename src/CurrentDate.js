@@ -21,7 +21,7 @@ export default function CurrentDate(props) {
     minutes = `0${minutes}`;
   }
   return (
-    <div>
+    <div className="mt-2">
       {day} {hours}:{minutes}
     </div>
   );

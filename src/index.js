@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import Description from "./Description";
 
-import "./styles.css";
+import "./index.css";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
@@ -15,7 +15,7 @@ root.render(
       <div className="container">
         <Description defaultCity="Hamburg" />
         <footer>
-          <p className="mt-3">
+          <p>
             This project was coded by
             <a href="https://github.com/muzhiwa/" target="_blank">
               {" "}

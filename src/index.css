@@ -51,6 +51,10 @@
   top: -34px;
 }
 
+.temperature-value a {
+  text-decoration: none;
+}
+
 footer {
   text-align: center;
   font-size: 14px;

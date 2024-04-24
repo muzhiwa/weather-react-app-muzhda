@@ -63,7 +63,11 @@ export default function WeatherSearch(props) {
         <footer className="mt-3">
           <p>
             This project was coded by
-            <a href="https://github.com/muzhiwa/" target="_blank">
+            <a
+              href="https://github.com/muzhiwa/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {" "}
               Muzhda Wafa
             </a>{" "}
@@ -71,6 +75,7 @@ export default function WeatherSearch(props) {
             <a
               href="https://github.com/muzhiwa/weather-react-app-muzhda"
               target="_blank"
+              rel="noopener noreferrer"
             >
               {" "}
               open-sourced on GitHub
@@ -79,6 +84,7 @@ export default function WeatherSearch(props) {
             <a
               href="https://weather-react-app-muzhda.netlify.app/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               {" "}
               hosted on Netlify
@@ -91,7 +97,7 @@ export default function WeatherSearch(props) {
     search();
     return (
       <div className="loader">
-        <ThreeDots color="pink" height={300} width={300} />
+        <ThreeDots color="#c3195d" height={300} width={300} />
       </div>
     );
   }

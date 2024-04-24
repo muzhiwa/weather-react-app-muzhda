@@ -13,7 +13,7 @@ export default function WeatherInfo(props) {
         </li>
         <li className="text-capitalize">{props.data.description}</li>
       </ul>
-      <div className="row mt-4 mb-3">
+      <div className="row mt-4 mb-2">
         <div className="col-6">
           <div className="d-flex">
             <div>
@@ -27,8 +27,14 @@ export default function WeatherInfo(props) {
         </div>
         <div className="col-6">
           <ul>
-            <li>Humidity: {props.data.humidity}%</li>
-            <li>Wind: {props.data.wind} km/h</li>
+            <li>
+              Humidity:{" "}
+              <span className="primary-color">{props.data.humidity}% </span>
+            </li>
+            <li>
+              Wind:{" "}
+              <span className="primary-color"> {props.data.wind} km/h </span>
+            </li>
           </ul>
         </div>
       </div>

@@ -11,6 +11,7 @@ export default function WeatherSearch(props) {
   function showTemperature(response) {
     setWeather({
       ready: true,
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
@@ -58,7 +59,7 @@ export default function WeatherSearch(props) {
           </div>
         </form>
         <WeatherInfo data={weather} />
-        <WeatherForecast />
+        <WeatherForecast coordinates={weather.coordinates} />
       </div>
     );
   } else {
